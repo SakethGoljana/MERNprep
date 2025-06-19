@@ -1087,8 +1087,15 @@ const createUI = () => {
 };
 
 createUI();
+const popcont = document.getElementById("cont");
+const popUp = document.getElementById("popup");
 const handleCardClick = () => {
-  alert("Card clicked");
+  // alert("Card clicked");
+  popUp.style.display = "flex";
+  popcont.innerHTML = `<h1>Welcome to the Recipe App</h1>`;
+};
+const ClosePopUp = () => {
+  popUp.style.display = "none";
 };
 
 const homebtn = document.getElementsByTagName("button")[0];
