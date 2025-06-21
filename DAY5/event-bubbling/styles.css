@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+#root{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    row-gap: 2rem;
+    column-gap: 1.5rem;
+    padding: 2rem;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+
+}
+.card{
+    padding: 1rem;
+    border: 1px solid #ccc;
+    background-color: beige;
+    justify-content: center;
+}
+.card img{
+    margin-top: 0.75rem;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
