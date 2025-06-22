@@ -22,20 +22,20 @@ const timerFunc = () => {
 
 let intervalId = setInterval(timerFunc, 1000);
 
-const handleReset = () => {
+const Reset = () => {
   timeInSec = 0;
   timerTextElem.innerText = "00:00:00";
 };
 
-const handlePause = () => {
+const Pause = () => {
   clearInterval(intervalId);
 };
 
-const handleResume = () => {
+const Resume = () => {
   intervalId = setInterval(timerFunc, 1000);
 };
 
-const handleLap = () => {
+const Lap = () => {
   const para = document.createElement("p");
   para.innerText = timerTextElem.innerText;
   document.getElementById("root").appendChild(para);

@@ -75,4 +75,6 @@ body {
     padding-right: 0.5rem;
   }
   #timer-text {
-    font
+    font-size: 2rem;
+  }
+}
