@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    min-height: 100vh;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 300px;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: 8px;
+}
