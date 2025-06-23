@@ -1,10 +1,19 @@
 const renderSuggestions = (data) => {
   const { results } = data;
   const rootElem = document.getElementById("search-suggestions");
+  const inputElem = document.getElementById("search");
+
   rootElem.innerText = "";
+
   results.forEach((txt) => {
     const newPara = document.createElement("p");
     newPara.innerText = txt;
+
+    newPara.addEventListener("click", () => {
+      inputElem.value = txt;
+      rootElem.innerText = "";
+    });
+
     rootElem.appendChild(newPara);
   });
 };
